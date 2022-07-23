@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="themes/{$themeconf.id}/css/open-sans/open-sans.css">
 
 <link href="themes/{$themeconf.id}/static/bootstrap/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="themes/{$themeconf.id}static/fontawesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="themes/{$themeconf.id}/static/fontawesome/css/all.min.css">
 {* cannot be loaded by combine_css because it contains relative urls *}
 {strip}{get_combined_css}
 {combine_css path="themes/`$themeconf.id`/css/base.css.tpl" version=$MODUS_CSS_VERSION template=true order=-10}
