@@ -8,7 +8,7 @@ Author: rvelices
 Author URI: http://www.modusoptimus.com
 */
 $themeconf = array(
-	'name' => 'modus',
+	'name' => 'brogit',
 	'parent' => 'default',
 	'colorscheme' => 'dark',
 );
