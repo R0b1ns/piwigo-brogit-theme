@@ -1,11 +1,11 @@
 <?php
 /*
-Theme Name: modus
+Theme Name: brogit
 Version: auto
 Description: Responsive, horizontal menu, retina aware, no lost space.
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=728
-Author: rvelices
-Author URI: http://www.modusoptimus.com
+Author: brogit
+Author URI: https://brogit.de
 */
 $themeconf = array(
 	'name' => 'brogit',
