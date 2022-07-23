@@ -5,8 +5,8 @@
 <link rel="shortcut icon" type="image/x-icon" href="{$ROOT_URL}{$themeconf.icon_dir}/favicon.ico">
 <link rel="stylesheet" type="text/css" href="themes/{$themeconf.id}/css/open-sans/open-sans.css">
 
-<link href="themes/`$themeconf.id`/static/bootstrap/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="themes/`$themeconf.id`/static/fontawesome/css/all.min.css">
+<link href="themes/{$themeconf.id}/static/bootstrap/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="themes/{$themeconf.id}static/fontawesome/css/all.min.css">
 {* cannot be loaded by combine_css because it contains relative urls *}
 {strip}{get_combined_css}
 {combine_css path="themes/`$themeconf.id`/css/base.css.tpl" version=$MODUS_CSS_VERSION template=true order=-10}
@@ -25,9 +25,9 @@
 {/strip}
 
 <!-- Bootstrap JavaScript Bundle with Popper -->
-<script src="themes/`$themeconf.id`/static/bootstrap/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="themes/{$themeconf.id}/static/bootstrap/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
-<script src="themes/`$themeconf.id`/static/fontawesome/js/all.min.js"></script>
+<script src="themes/{$themeconf.id}/static/fontawesome/js/all.min.js"></script>
 
 {if isset($U_PREFETCH)}<link rel=prefetch href="{$U_PREFETCH}">{/if}
 {if isset($U_CANONICAL)}<link rel=canonical href="{$U_CANONICAL}">{/if}
