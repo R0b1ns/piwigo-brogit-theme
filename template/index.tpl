@@ -15,7 +15,7 @@
 		<div class="col-lg-10 col-md-9 col-sm-8 p-0">
 			{$MENUBAR}
 
-			<div class="titrePage{if isset($chronology.TITLE)} calendarTitleBar{/if}">
+			<div class="titrePage{if isset($chronology.TITLE)} calendarTitleBar{/if} p-2 pe-0">
 				<ul class="categoryActions">
 			{if !empty($image_orders)}
 					<li>{strip}<a id="sortOrderLink" title="{'Sort order'|@translate}" class="pwg-state-default pwg-button" rel="nofollow">
@@ -102,7 +102,7 @@
 			{if !empty($PLUGIN_INDEX_ACTIONS)}{$PLUGIN_INDEX_ACTIONS}{/if}
 				</ul>
 
-			<h2>{$TITLE} {if $NB_ITEMS > 0}<span class="badge nb_items">{$NB_ITEMS}</span>{/if}</h2>
+			<h2>{$TITLE} {if $NB_ITEMS > 0}<span class="badge rounded-pill bg-primary nb_items">{$NB_ITEMS}</span>{/if}</h2>
 
 			{if isset($chronology_views)}
 			<div class="calendarViews">{'View'|@translate}:
