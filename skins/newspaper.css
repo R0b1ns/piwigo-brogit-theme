@@ -37,29 +37,35 @@ A{
   color:#000000;
 }
 
+/*
 a:hover{
   text-decoration:underline;
   font-weight:normal;
   color:black;
 }
+*/
 
 #menubar{
   background-color:#2D2D2D;
 }
 
+/*
 #comentAdd INPUT[type="text"], INPUT[type="password"], #comentAdd SELECT, #comentAdd TEXTAREA, #comments input[type="text"], #comments TEXTAREA{
   background-color:#2D2D2D;
   color:white;
 }
+*/
 
 ::placeholder, #commentAdd ::placeholder {
   color:#d6d6d6;
 }
 
+/*
 #qsearchInput{
   border:1px solid #fff;
   color:white;
 }
+*/
 
 .selectize-control.multi .selectize-input [data-value].active,
 .selectize-control.multi .selectize-input > div{
@@ -78,6 +84,7 @@ a:hover{
   border-left-color:#333333;
 }
 
+/*
 #menubar DT,
 #menubar DT A,
 #thePicturePage .titrePage h2,
@@ -96,6 +103,7 @@ dd,
 #imageHeaderBar .imageNumber {
   color:white;
 }
+*/
 
 fieldset label{
   color:black;
@@ -117,28 +125,37 @@ fieldset label{
   text-decoration:underline;
 }
 
+/*
 INPUT[type="button"],
 INPUT[type="submit"],
 INPUT[type="reset"],
 #menubar INPUT{
   color:white;
 }
+*/
 
+/*
 INPUT[type="submit"] {
   background-color: #383838;
   color: white;
 }
+*/
 
+/*
 .wide #imageToolBar{
   background-color:white;
 }
+*/
 
+/*
 .badge{
   background-color: #777;
   border-radius:0px!important;
   color:#ddd;
 }
+*/
 
+/*
 .wide .imageInfoTable,
 .wide #imageInfos{
   background-color:#2D2D2D;
@@ -148,11 +165,13 @@ INPUT[type="submit"] {
   background-color:#2D2D2D;
   color:white;
 }
+*/
 
 A .pwg-icon {
   color:#000000;
 }
 
+/*
 #quickconnect input:focus,
 #quickconnect input,
 .properties input,
@@ -160,15 +179,20 @@ A .pwg-icon {
   color:white;
   background-color:#2d2d2d;
 }
+*/
 
+/*
 .properties input, .properties input:focus {
   background-color:#2D2D2D;
   color:white;
 }
+*/
 
+/*
 fieldset legend{
   color:white;
 }
+*/
 
 .titrePage{
   background-color:white;
@@ -181,11 +205,12 @@ fieldset legend{
   text-shadow:none;
 }
 
-
+/*
 .titrePage H2 span.badge {
   background-color: #777;
   color: #fff;
 }
+*/
 
 .titrePage A,
 #calendarViewSwitchLink,
@@ -197,19 +222,23 @@ fieldset legend{
   color:black;
 }
 
+/*
 #thePicturePage .titrePage{
  background-color: #2D2D2D;
 }
+*/
 
 .switchBoxTitle{
   border-bottom: 2px solid #555;
 }
 
+/*
 #comments input[type='text'],
 #comments textarea{
   background-color:#2D2D2D;
   color:white;
 }
+*/
 
 .overDesc{
   background-color:rgba(0,0,0,0.6)
@@ -224,15 +253,17 @@ fieldset legend{
   background-color:#e7e7e7;
 }
 
+/*
 hr{
   border-bottom: 2px solid #555;
 }
+*/
 
 #theSearchPage fieldset legend {
   color:black;
 }
 
-
+/*
 .filter input,
 .filter input:focus,
 .selectize-input > input,
@@ -243,6 +274,7 @@ TEXTAREA{
   background-color:#363636 ;
   color:white;
 }
+*/
 
 .date_today:hover{
   color:black;
@@ -338,7 +370,7 @@ td .nbEntries{
    #imageToolBar .actionButtons .pwg-button-text,
    .actionButtons A .pwg-icon,
    .actionButtons A .pwg-icon:hover {
-    color:white ;
+    color: var(--bs-dark);
   }
   .categoryActions a .pwg-icon{
     color:white ;
