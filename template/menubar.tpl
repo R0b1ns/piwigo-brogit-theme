@@ -10,7 +10,7 @@
 {/footer_script}
 
 {if !empty($blocks)}
-<nav id="menubar_new" class="navbar sticky-top navbar-expand-lg bg-light">
+<nav id="menubar" class="navbar sticky-top navbar-expand-lg bg-light">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" title="{'Menu'|@translate}">
       <span class="navbar-toggler-icon"></span>
