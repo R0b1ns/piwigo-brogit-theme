@@ -31,7 +31,7 @@ function modus_smarty_prefilter($source)
 	$source = str_replace('<div id="imageHeaderBar">', '<div class=titrePage id=imageHeaderBar>', $source );
 	$source = str_replace('<div id=imageHeaderBar>',   '<div class=titrePage id=imageHeaderBar>', $source );
 
-	if (!isset($lang['modus_theme']))
+	if (!isset($lang['brogit_theme']))
 		load_language('theme.lang', dirname(__FILE__).'/');
 
 	// picture page actionButtons wrap for mobile

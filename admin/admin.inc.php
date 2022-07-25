@@ -10,7 +10,7 @@ $default_conf = modus_get_default_config();
 
 load_language('theme.lang', dirname(__FILE__).'/../');
 
-$my_conf = @$conf['modus_theme'];
+$my_conf = @$conf['brogit_theme'];
 if (!isset($my_conf))
   $my_conf = $default_conf;
 elseif (!is_array($my_conf))
@@ -38,7 +38,7 @@ if (isset($_POST[$text_values[0]]))
 	// int/double
 	$my_conf['album_thumb_size'] = max(0, $my_conf['album_thumb_size']);
   $my_conf = array_intersect_key($my_conf, $default_conf);
-  conf_update_param('modus_theme', addslashes(serialize($my_conf)) );
+  conf_update_param('brogit_theme', addslashes(serialize($my_conf)) );
 
 	global $page;
   $page['infos'][] = l10n('Information data registered in database');

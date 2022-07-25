@@ -16,32 +16,32 @@ $themeconf = array(
 define('MODUS_STR_RECENT', "\xe2\x9c\xbd"); //HEAVY TEARDROP-SPOKED ASTERISK
 define('MODUS_STR_RECENT_CHILD', "\xe2\x9c\xbb"); //TEARDROP-SPOKED ASTERISK
 
-if (isset($conf['modus_theme']) && !is_array($conf['modus_theme']))
+if (isset($conf['brogit_theme']) && !is_array($conf['brogit_theme']))
 {
-	$conf['modus_theme'] = unserialize($conf['modus_theme']);
+	$conf['brogit_theme'] = unserialize($conf['brogit_theme']);
 }
 
 if (!empty($_GET['skin']) && !preg_match('/[^a-zA-Z0-9_-]/', $_GET['skin']))
-	$conf['modus_theme']['skin'] = $_GET['skin'];
+	$conf['brogit_theme']['skin'] = $_GET['skin'];
 
 // we're mainly interested in an override of the colorscheme
-include( dirname(__FILE__).'/skins/'.$conf['modus_theme']['skin'].'.inc.php' );
+include( dirname(__FILE__).'/skins/'.$conf['brogit_theme']['skin'].'.inc.php' );
 
 $this->assign( array(
 	'MODUS_CSS_VERSION' => crc32(implode(',', array(
-		'a'.@$conf['modus_theme']['skin'],
-		@$conf['modus_theme']['album_thumb_size'],
+		'a'.@$conf['brogit_theme']['skin'],
+		@$conf['brogit_theme']['album_thumb_size'],
 		ImageStdParams::get_by_type(IMG_SQUARE)->max_width(),
 		$conf['index_created_date_icon'],
 		$conf['index_posted_date_icon'],
 	))),
-	'MODUS_DISPLAY_PAGE_BANNER' => @$conf['modus_theme']['display_page_banner']
+	'MODUS_DISPLAY_PAGE_BANNER' => @$conf['brogit_theme']['display_page_banner']
 	)
 );
 
-if (file_exists(dirname(__FILE__).'/skins/'.$conf['modus_theme']['skin'].'.css' ))
+if (file_exists(dirname(__FILE__).'/skins/'.$conf['brogit_theme']['skin'].'.css' ))
 {
-	$this->assign('MODUS_CSS_SKIN', $conf['modus_theme']['skin']);
+	$this->assign('MODUS_CSS_SKIN', $conf['brogit_theme']['skin']);
 }
 
 if (!$conf['compiled_template_cache_language'])
@@ -110,12 +110,12 @@ function modus_combinable_preparse($template)
 		$template->smarty->registerPlugin('modifier', 'cssGradient', 'modus_css_gradient');
 	} catch(SmartyException $exc) {}
 
-	include( dirname(__FILE__).'/skins/'.$conf['modus_theme']['skin'].'.inc.php' );
+	include( dirname(__FILE__).'/skins/'.$conf['brogit_theme']['skin'].'.inc.php' );
 
 	$template->assign( array(
 		'conf' => $conf,
 		'skin' => $skin,
-		'MODUS_ALBUM_THUMB_SIZE' => intval(@$conf['modus_theme']['album_thumb_size']),
+		'MODUS_ALBUM_THUMB_SIZE' => intval(@$conf['brogit_theme']['album_thumb_size']),
 		'SQUARE_WIDTH' => ImageStdParams::get_by_type(IMG_SQUARE)->max_width(),
 		'loaded_plugins' => $GLOBALS['pwg_loaded_plugins']
 		));
@@ -239,15 +239,15 @@ add_event_handler('get_index_derivative_params', 'modus_get_index_photo_derivati
 function modus_get_index_photo_derivative_params($default)
 {
 	global $conf;
-	if (isset($conf['modus_theme']) && pwg_get_session_var('index_deriv')===null)
+	if (isset($conf['brogit_theme']) && pwg_get_session_var('index_deriv')===null)
 	{
-		$type = $conf['modus_theme']['index_photo_deriv'];
+		$type = $conf['brogit_theme']['index_photo_deriv'];
 		if ( $caps=pwg_get_session_var('caps') )
 		{
 			if ( ($caps[0]>=2 && $caps[1]>=768) /*Ipad3 always has clientWidth 768 independently of orientation*/
 				|| $caps[0]>=3
 				)
-				$type = $conf['modus_theme']['index_photo_deriv_hdpi'];
+				$type = $conf['brogit_theme']['index_photo_deriv_hdpi'];
 		}
 		$new = @ImageStdParams::get_by_type($type);
 		if ($new) return $new;
@@ -260,7 +260,7 @@ function modus_index_category_thumbnails($items)
 {
 	global $page, $template, $conf;
 
-	if ('categories'!=$page['section'] || !($wh=@$conf['modus_theme']['album_thumb_size']) )
+	if ('categories'!=$page['section'] || !($wh=@$conf['brogit_theme']['album_thumb_size']) )
 		return $items;;
 
 	$template->assign('album_thumb_size', $wh);
