@@ -9,6 +9,7 @@
 	padding: 0;
 }
 
+/*
 #imageToolBar {
 	text-align: center;
 	margin-bottom: 2px;
@@ -18,9 +19,10 @@
 	background-color: {$skin.pictureBar.backgroundColor};
 {/if}
 }
+*/
 
 #imageToolBar .actionButtons {
-	float: left;
+	float: right;
 }
 
 #imageToolBar .navigationButtons   {
@@ -28,17 +30,20 @@
 }
 
 #imageToolBar .pwg-button {
-	width:42px;
+	padding-left: .25rem;
+	padding-right: .25rem;
 }
 
 #theImage {
 	text-align: center;
 }
 
+/*
 #imageInfos {
 	position: relative; /*for IE7 positioning of "who can see this photo"*/
 	min-height: 166px;
 }
+*/
 
 #linkPrev {
 	float: left;
@@ -123,12 +128,15 @@ DIV.thumbHover { /* first & last holders only*/
 
 @media screen {
 /*picture page wide screen*/
-.wide #theImage {
+/*.wide #theImage {*/
+/*
 	display: inline;
 	float: left;
-	width: 76.1%; /*min default picture derivative width*/
-}
+	width: 76.1%; *//*min default picture derivative width*/
+/*}*/
 
+
+/*
 .wide #imageInfos {
 	margin-left: 76.5%; /*default picture derivative width + ~ 5px; must have enough space for thumbs*/
 	border-radius: 8px 0 0 8px;
@@ -136,6 +144,7 @@ DIV.thumbHover { /* first & last holders only*/
 	background-color: {$skin.pictureWideInfoTable.backgroundColor};
 {/if}
 }
+*/
 
 .wide .navThumbs {
 	min-width: {2*$SQUARE_WIDTH+2}px;
@@ -182,6 +191,7 @@ DIV.thumbHover { /* first & last holders only*/
 	margin: 0 0 5px 10px;
 }
 
+/*
 {if !empty($skin.widePictureBar)}
 	.wide #imageToolBar {
 {if !empty($skin.widePictureBar.backgroundColor)}
@@ -190,6 +200,7 @@ DIV.thumbHover { /* first & last holders only*/
 	}
 {/if}
 }
+*/
 
 @media screen and (max-width:800px),
 	screen and (-webkit-min-device-pixel-ratio:1.3) {
@@ -234,7 +245,7 @@ DIV.thumbHover { /* first & last holders only*/
 		position: absolute;
 		z-index: 1;
 		min-width: 200px;
-		background-color: {$skin.dropdowns.backgroundColor};
+		background-color: #f8f9fa; /* {$skin.dropdowns.backgroundColor} */
 		padding-top: 10px;
 		box-shadow: 2px 2px 5px gray;
 		opacity: 0.95;

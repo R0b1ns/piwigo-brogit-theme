@@ -13,10 +13,12 @@ A {
 	color: {$skin.A.color};
 }
 
+/*
 A:hover {
 	text-decoration:underline;
 	color: {$skin['A:hover'].color};
 }
+*/
 
 A .pwg-icon {
 	opacity: 0.9;
@@ -25,10 +27,16 @@ A:hover .pwg-icon {
 	opacity: 1;
 }
 
-IMG {
+img {
 	border: 0; /*IE <= 9 adds border for linked images*/
 }
 
+.titrePage h2 {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+/*
 H2 {
 	margin: 0;
 	padding: 2px 5px 3px 0;
@@ -36,15 +44,18 @@ H2 {
 	font-size: 20px;
 	font-weight: normal;
 }
+*/
 
 BLOCKQUOTE {
 	margin: 8px 10px; /*reduce default user agent margin too large for mobiles*/
 }
 
+/*
 INPUT, SELECT {
 	margin: 0;
 	font-size: 1em;	/* <= some browsers don't set it correctly */
 }
+*/
 
 TABLE {	/* horizontaly centered */
 	margin-left: auto;
@@ -54,7 +65,7 @@ TABLE {	/* horizontaly centered */
 
 FORM { padding: 0; margin: 0; }
 
-
+/*
 {if !empty($skin.controls)}
 INPUT[type="text"], INPUT[type="password"], SELECT, TEXTAREA
 {if empty($skin.buttons)}
@@ -75,7 +86,9 @@ INPUT[type="text"], INPUT[type="password"], SELECT, TEXTAREA
 {/if}
 }
 {/if}
+*/
 
+/*
 {if !empty($skin['controls:focus'])}
 INPUT:focus, TEXTAREA:focus {
 {if !empty($skin['controls:focus'].backgroundColor)}
@@ -89,8 +102,9 @@ INPUT:focus, TEXTAREA:focus {
 {/if}
 }
 {/if}
+*/
 
-
+/*
 {if !empty($skin.buttons)}
 INPUT[type="button"], INPUT[type="submit"], INPUT[type="reset"] {
 {if !empty($skin.buttons.backgroundColor)}
@@ -107,7 +121,9 @@ INPUT[type="button"], INPUT[type="submit"], INPUT[type="reset"] {
 {/if}
 }
 {/if}
+*/
 
+/*
 {if !empty($skin.buttonsHover)}
 INPUT[type="button"]:hover, INPUT[type="submit"]:hover, INPUT[type="reset"]:hover {
 {if !empty($skin.buttonsHover.backgroundColor)}
@@ -127,7 +143,9 @@ INPUT[type="button"]:hover, INPUT[type="submit"]:hover, INPUT[type="reset"]:hove
 {/if}
 }
 {/if}
+*/
 
+/*
 FIELDSET {
 	padding: 1em;
 	margin: 1em 0.5em;
@@ -138,6 +156,7 @@ LEGEND {
 	font-style: italic;
 	color: inherit; /*for IE*/
 }
+*/
 
 
 /**
@@ -194,12 +213,14 @@ LEGEND {
 }
 {/if}
 
+/*
 .titrePage H2 span.badge::before {
 	content:'[';
 }
 .titrePage H2 span.badge::after {
 	content:']';
 }
+*/
 
 .content .navigationBar, .content .additional_info, .content .calendarBar {
 	margin: 8px 4px;
@@ -302,6 +323,7 @@ A.wiki { cursor:help; }
 	/*width: inherit;*/
 }
 
+/*
 #comments input[type="text"],
 #comments TEXTAREA {
 	max-width: 100%;
@@ -309,6 +331,7 @@ A.wiki { cursor:help; }
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+*/
 
 .commentAuthor {
 	font-weight: bold;

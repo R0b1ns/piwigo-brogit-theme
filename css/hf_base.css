@@ -15,12 +15,15 @@ html, body {
   text-shadow:none;
 }
 
+/*
 #menubar .menuInfoCat::before {
   content:'';
 }
 #menubar .menuInfoCat::after {
   content:'';
 }
+*/
+
 #content {flex: 1 0 auto;}
 #copyright{flex-shrink: 0;}
 
@@ -58,14 +61,16 @@ html, body {
   border-left: 3px solid #d31100;
 }
 
+/*
 h2{
   padding:2px 5px 0px 0px;
   font-size:17px;
 }
+*/
 
 .albLegend{
   height:45px;
-  padding:5px 0;
+  /*padding:5px 0;*/
   font-weight: normal;
 }
 
@@ -73,38 +78,14 @@ h2{
   padding:5px;
 }
 
-#menubar{
-  background-image:none;
-  padding-top: 20px;
-  padding-bottom:20px;
-  padding-left:16px;
-  font-weight:normal;
-  width:auto;
-  border-radius:0px;  
-}
-
-#menubar dt A{
-  font-weight:normal;
-}
-
-#menubar dt A:hover{
-  font-weight:normal;
-}
-
-#menubar DT, #menubar DT A{
-  padding-right:1.25em;
-}
-
-#menubar dl:last-child dd{
-  display:none!important;
-}
-
+/*
 #comentAdd INPUT[type="text"], INPUT[type="password"], #comentAdd SELECT, #comentAdd TEXTAREA, #comments input[type="text"], #comments TEXTAREA{
   border-color:transparent;
   font-family:'Open Sans', sans-serif;
   padding:10px;
   cursor:pointer
 }
+*/
 
 INPUT:focus,TEXTAREA:focus{
   outline:none;
@@ -112,6 +93,7 @@ INPUT:focus,TEXTAREA:focus{
   cursor:pointer
 }
 
+/*
 #qsearchInput{
   padding:5px ;
   margin:0;
@@ -119,6 +101,7 @@ INPUT:focus,TEXTAREA:focus{
   font-weight:normal;
   cursor:pointer
 }
+*/
 
 .filter input[name="search_allwords"]{
   margin-bottom:10px;
@@ -138,26 +121,14 @@ INPUT:focus,TEXTAREA:focus{
   box-shadow:none;
 }
 
-#menubar DD{
-  box-shadow:none;
-}
-
-#menubar DD A{
-  text-decoration:none;
-  font-size:15px;
-  font-weight:normal;
-}
-
-#menubar DD A:hover{
-  font-size:15px;
-  font-weight:normal;
-}
-
+/*
 li, #mbCategories UL{
   list-style-type:none;
   padding-left:0;
 }
+*/
 
+/*
 INPUT[type="button"],
 INPUT[type="submit"],
 INPUT[type="reset"],
@@ -171,25 +142,32 @@ INPUT[type="reset"]:hover,
   /*
   padding: 10px 20px;
   margin-top: 10px;*/
-  cursor:pointer;
+  /*cursor:pointer;
 }
+*/
 
+/*
 INPUT[type="submit"]{
   border:0;
 }
+*/
 
 .contact INPUT[type="submit"]{
   margin-right:5px;
   cursor:pointer;
 }
 
+/*
 .wide #imageToolBar{
   padding:15px 5px 10px 5px;
 }
+*/
 
+/*
 #imageToolBar{
   padding:10px 6px;
 }
+*/
 
 .imageInfoTable{
   font-family: 'Open Sans', sans-serif;
@@ -204,6 +182,7 @@ INPUT[type="submit"]{
   padding: 5px;
 }
 
+/*
 .badge{
 	font-size: 90%;
 	border-radius: 20px;
@@ -212,47 +191,38 @@ INPUT[type="submit"]{
   font-size: 12px;
   font-weight:normal!important;
 }
+*/
 
-#menubar li,
-#mbCategories p{
-  padding:5px;
-}
-
-#menubar LI.selected>A{
-  font-weight: normal;
-  text-decoration: underline;
-}
-
-#menubar DL{
-  margin:0;
-  padding-top:2px;
-  padding-left:0;
-}
-
+/*
 .wide .imageInfoTable,
 .wide #imageInfos{
   border-radius: 0px;
   padding:0px;
 }
+*/
 
 .wide .imageInfo DT{
   font-weight:bold;
 }
 
+/*
 .wide #imageInfos{
   margin-left:75%;
   margin-right:0;
   padding:20px;
 }
+*/
 
 .imageInfoTable h3{
   margin-top:0;
   padding-top:1em;
 }
 
+/*
 #imageInfos{
   padding-bottom:15px;
 }
+*/
 
 .pwg-icon{
   font-size:17px;
@@ -268,11 +238,14 @@ INPUT[type="submit"]{
   margin-top:10px;
 }
 
+/*
 fieldset{
   border:none;
   margin-bottom:0;
 }
+*/
 
+/*
 #quickconnect input:focus,
 #quickconnect input,
 .properties input,
@@ -284,6 +257,7 @@ fieldset{
   cursor:pointer;
   margin:0;
 }
+*/
 
 .filter fieldset label,
 fieldset legend{
@@ -300,6 +274,7 @@ fieldset legend{
   margin-bottom:50px;
 }
 
+/*
 .titrePage{
   padding-top:20px;
   padding-bottom:20px;
@@ -307,18 +282,23 @@ fieldset legend{
   height:auto;
   background-image:none;
 }
+*/
 
+/*
 .titrePage H2 span.badge::before,
 .titrePage H2 span.badge::after  {
   content:'';
 }
+*/
 
+/*
 .titrePage H2 span.badge {
   margin-left: 5px;
   padding: 2px 7px;
   font-size: 12px;
   font-weight: bold;
 }
+*/
 
 .titrePage .switchBox A,
 .titrePage .switchBox{
@@ -367,12 +347,14 @@ fieldset legend{
   font-weight:normal;
 }
 
+/*
 #comments input[type='text'],
 #comments textarea{
   border:none;
   padding:10px;
   cursor:pointer
 }
+*/
 
 .imageInfoTable ul{
   padding:0;
@@ -381,11 +363,6 @@ fieldset legend{
 #thumbnails{
   margin-left:0!important ;
   margin-bottom:0;
-}
-
-#menubar dt a:first-child,
-#menubar dt a:last-child{
-  padding-right:0;
 }
 
 #comments{
@@ -421,10 +398,6 @@ fieldset legend{
   width:200px;
 }
 
-hr{
-  border: none;
-}
-
 #menuTagCloud a{
   display:list-item;
   list-style:none;
@@ -446,6 +419,7 @@ hr{
   width:49%;
 }
 
+/*
 .filter input,
 .filter input:focus,
 .selectize-input > input,
@@ -458,6 +432,7 @@ TEXTAREA{
   padding:10px;
   cursor:pointer
 }
+*/
 
 .selectize-input,
 .selectize-input.focus,
@@ -466,13 +441,6 @@ TEXTAREA{
   border-radius:0;
   box-shadow:none;
   border:0;
-  padding:10px;
-  cursor:pointer
-}
-
-INPUT,
-SELECT{
-  font-size:13px;
   padding:10px;
   cursor:pointer
 }
@@ -525,6 +493,7 @@ SELECT{
   padding-top:5px;
 }
 
+/*
 .wide #theImage{
   margin-bottom:5px;
 }
@@ -532,6 +501,7 @@ SELECT{
 #theImage{
   padding-bottom:20px;
 }
+*/
 
 .wide .navThumb img,
 .wide .navThumb,
@@ -708,6 +678,10 @@ td .nbEntries{
   overflow:hidden;
 }
 
+.albThumbs > li {
+  border-radius: .3rem;
+}
+
 #lostPassword,
 .notification{
   max-width:1000px;
@@ -747,10 +721,6 @@ td .nbEntries{
 }
 
 @media screen and (max-width: 640px){ 
-  #menubar{
-    box-shadow:none;
-    padding:20px;
-  }
   #mbCategories dd:onclick{
     display:block;
   }
@@ -779,9 +749,6 @@ td .nbEntries{
   }
   #pictureComments #commentAdd{
     width:100%;
-  }
-  #menubar dl{
-    padding:5px 0;
   }
   DIV.thumbHover{
     height :auto ;

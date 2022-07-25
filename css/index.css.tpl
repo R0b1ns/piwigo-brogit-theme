@@ -1,6 +1,5 @@
 /* Thumbnail "elastic" layout */
 .thumbnails {
-	margin: 1em 0;
 	padding: 0;
 	list-style: none;
 	text-align: center;	/* to center the whole collection in .content */
@@ -44,7 +43,7 @@
 	background-color: rgba(0,0,0,0.5);
 
 	position: absolute;
-	height: 1.5em;
+	/*height: 1.5em;*/
 	width: 100%;
 	left: 0; /* for IE7, all others use 0 by default*/
 	bottom: -100px;
@@ -224,7 +223,7 @@ LI:hover>.overDesc {
 }
 
 .albSymbol { /* used also in other contexts*/
-	font-size: 16px;
+	/*font-size: 16px;*/
 	line-height: 20px;
 	cursor: pointer;
 }
