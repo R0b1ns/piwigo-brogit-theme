@@ -73,7 +73,7 @@ foreach ($tabs as $tab)
   $tabsheet->add(
     $tab['code'],
     $tab['label'],
-    'admin.php?page=theme&amp;theme=modus'
+    'admin.php?page=theme&amp;theme=brogit'
     );
 }
 $tabsheet->select($page['tab']);

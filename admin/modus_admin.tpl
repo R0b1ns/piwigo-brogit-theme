@@ -125,10 +125,10 @@ jQuery(document).ready(function() {
           {$skin_name}
         </div>
         <div class="themeShot">
-          <img src="{$ROOT_URL}themes/modus/skins/{$skin_code}-screenshot.jpg"/>
+          <img src="{$ROOT_URL}themes/piwigo-brogit-theme/skins/{$skin_code}-screenshot.jpg"/>
         </div>
       </label>
-      <a href="{$ROOT_URL}themes/modus/skins/{$skin_code}-screenshot.jpg" class="icon-zoom-in" title="{$skin_name}">{'Preview'|translate}</a>
+      <a href="{$ROOT_URL}themes/piwigo-brogit-theme/skins/{$skin_code}-screenshot.jpg" class="icon-zoom-in" title="{$skin_name}">{'Preview'|translate}</a>
     </div>
   {/foreach}
   </div>
