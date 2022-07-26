@@ -1,3 +1,17 @@
+/*
+brogit additions
+*/
+
+#batchManagerGlobal fieldset#action {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+/brogit additions
+*/
+
+
 body {
   display: flex;
   flex-direction: column;
